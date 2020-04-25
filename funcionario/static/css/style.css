@@ -163,7 +163,7 @@ main>table {
     padding       : 30px 12px;
     line-height   : 1.4;
     text-transform: initial;
-    height: 45px;
+    height        : 45px;
 }
 
 .sidenav li a>i {
@@ -172,24 +172,25 @@ main>table {
     height      : auto;
 }
 
-.btn-success  > i {
+.btn-success>i {
     vertical-align: bottom;
-    margin-right: 6px;
-    font-size: 1.3rem;
+    margin-right  : 6px;
+    font-size     : 1.3rem;
 }
 
-.dcmnit_authors li > a {
-    padding-top: 0;
+.dcmnit_authors li>a {
+    padding-top   : 0;
     padding-bottom: 0;
-    line-height: normal;
+    line-height   : normal;
 }
 
-.dcmnit_authors__title { 
+.dcmnit_authors__title {
     background: #2f696f;
-    color: #fff;
-    margin: 1.8rem 0 1.8rem ;
-    
+    color     : #fff;
+    margin    : 1.8rem 0 1.8rem;
+
 }
 
-.dcmnit_authors__title span {margin-left: 1rem;}
-
+.dcmnit_authors__title span {
+    margin-left: 1rem;
+}
