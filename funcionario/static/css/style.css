@@ -1,0 +1,195 @@
+/*style*/
+body {
+    display       : flex;
+    min-height    : 100vh;
+    flex-direction: column;
+}
+
+main {
+    padding: 2rem;
+    flex   : 1 0 auto;
+}
+
+.dcmnit {
+    width          : 100%;
+    height         : 68px;
+    display        : flex;
+    text-transform : uppercase;
+    justify-content: space-between;
+    align-items    : center;
+    background     : #35363a;
+    color          : #fff;
+    padding        : 0 1rem 0 1rem;
+    box-shadow     : 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+}
+
+.dcmnit_container {
+    display    : flex;
+    align-items: center;
+}
+
+.dcmnit_container>span {
+    font-size  : 1.4rem;
+    font-weight: 400;
+
+}
+
+.dcmnit_module_version>span {
+    font-size: 11px;
+    opacity  : 0.85;
+}
+
+.dcmnit_box-floating {
+    display        : flex;
+    width          : 94%;
+    flex-direction : row;
+    justify-content: flex-end;
+    height         : 7rem;
+    align-items    : center;
+    position       : absolute;
+    bottom         : 6rem;
+    padding        : 0 47px 0 0;
+}
+
+.btn-floating.btn-large {
+    background: #515d71;
+}
+
+.dcmnit_title {
+    display        : flex;
+    flex-wrap      : nowrap;
+    justify-content: flex-start;
+    align-items    : center;
+    margin-top     : 1rem;
+
+}
+
+.dcmnit_title>.dcmnit_folder {
+    font-size: 4.2rem;
+    color    : #ffc65c;
+
+}
+
+.dcmnit_title>h3 {
+    margin   : 0 0 0 15px;
+    font-size: 2.5rem;
+}
+
+main>table {
+    position: relative;
+    top     : 3rem;
+}
+
+.page-footer {
+    background: #393939;
+    padding   : 5px 0 5px;
+}
+
+.dcmnit_red {
+    background: #b96063;
+}
+
+.dcmnit_icon {
+    font-size   : 3rem !important;
+    margin-right: 1rem;
+}
+
+.dcmnit_edit {
+    color: #000;
+}
+
+.dcmnit_delete {
+    color: #bb2329;
+}
+
+.dcmnit_logo {
+    background: url('/static/images/logo_transparent.png');
+    width     : 90px;
+    height    : 90px;
+
+}
+
+.page-footer>.container {
+    text-align: center;
+}
+
+.dcmnit_copyright {
+    font-size  : 11px;
+    font-weight: 300;
+    opacity    : .85;
+}
+
+#dcmnit_btn__delete:hover {
+    background: #ab5757;
+}
+
+#dcmnit_btn__edit {
+    background  : #3d6d84;
+    margin-right: 5px;
+}
+
+#dcmnit_btn__edit,
+#dcmnit_btn__delete {
+    border-radius: 5px;
+    padding      : 0 9px;
+}
+
+
+
+.sidenav .user-view .background {
+    max-width      : 100%;
+    height         : 250px;
+    position       : relative;
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+}
+
+.sidenav .user-view .background {
+    background: #f1f1f1;
+    box-shadow: -1px 0px 2px 1px #0000001f;
+}
+
+.sidenav .user-view .background img {
+    max-width: 100%;
+}
+
+.sidenav .user-view {
+    padding: 0;
+}
+
+.sidenav li>a {
+    font-size     : 13px;
+    padding       : 30px 12px;
+    line-height   : 1.4;
+    text-transform: initial;
+    height: 45px;
+}
+
+.sidenav li a>i {
+    margin-right: 15px !important;
+    line-height : normal !important;
+    height      : auto;
+}
+
+.btn-success  > i {
+    vertical-align: bottom;
+    margin-right: 6px;
+    font-size: 1.3rem;
+}
+
+.dcmnit_authors li > a {
+    padding-top: 0;
+    padding-bottom: 0;
+    line-height: normal;
+}
+
+.dcmnit_authors__title { 
+    background: #2f696f;
+    color: #fff;
+    margin: 1.8rem 0 1.8rem ;
+    
+}
+
+.dcmnit_authors__title span {margin-left: 1rem;}
+

@@ -1,0 +1,107 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <title>Atualizar Cadastro</title>  
+    {% load static %}  
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+</head>  
+<body>  
+<header class="dcmnit">
+     <ul id="slide-out" class="sidenav">
+            <li>
+                <div class="user-view">
+                    <div class="background">
+                        <img src="/static/images/logo_transparent.png">
+                    </div>
+                </div>
+            </li>
+            <br>
+            <li><a href="#"><i class="material-icons">drafts</i>dcmnit@solutions.com</a></li>
+            <li><a href="#"><i class="material-icons dcmnit_addres">language</i>www.dcmnit.com</a></li>
+            <li><a href="#"><i class="material-icons dcmnit_addres">location_on</i>Rua Beneficência Portuguesa n. 4001 CEP: 03480-024 São Paulo/SP</a></li>
+            <li><a href="#"><i class="material-icons">smartphone</i>(11) 9897-2666</a></li>
+            <li><a href="#"><i class="material-icons">phone</i>(11) 2342-2935</a></li>
+            <li>
+                <ul class="dcmnit_authors"> 
+                    <li class="dcmnit_authors__title"><span>Fundadores</span></li>
+                    <li><a class="waves-effect" href="#!">Douglas Apolonio Alves</a></li>
+                    <li><a class="waves-effect" href="#!">Noadia De Valença Silva</a></li>
+                    <li><a class="waves-effect" href="#!">Carlos Guilherme</a></li>
+                    <li><a class="waves-effect" href="#!">Max Gustavo</a></li>
+                </ul>
+            </li>
+        </ul>
+
+    <div class="dcmnit_container">
+      <i class="material-icons dcmnit_icon">polymer</i>
+      <span>basics</span>
+    </div>
+    <div class="dcmnit_module_version">
+      {% comment %} <span>MODULE V.0.1.8</span> {% endcomment %}
+      <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+  </header>
+  <main>
+<form method="POST" class="post-form" action="/update/{{funcionario.id}}">  
+        {% csrf_token %}  
+    <div class="container">  
+<br>  
+    <div class="form-group row">  
+    <label class="col-sm-1 col-form-label"></label>  
+    <div class="col-sm-4">  
+    <h3>Atualizar Funcionário</h3>  
+    </div>  
+  </div>  
+    <div class="form-group row">  
+    <label class="col-sm-2 col-form-label">funcionario Id:</label>  
+    <div class="col-sm-4">  
+        <input type="text" name="fid" id="id_fid" required maxlength="20" value="{{ funcionario.fid }}"/>  
+    </div>  
+  </div>  
+  <div class="form-group row">  
+    <label class="col-sm-2 col-form-label">funcionario Name:</label>  
+    <div class="col-sm-4">  
+        <input type="text" name="fname" id="id_fname" required maxlength="100" value="{{ funcionario.fname }}" />  
+    </div>  
+  </div>  
+  <div class="form-group row">  
+    <label class="col-sm-2 col-form-label">funcionario Name:</label>  
+    <div class="col-sm-4">  
+        <input type="text" name="fposition" id="id_fposition" required maxlength="100" value="{{ funcionario.fposition }}" />  
+    </div>  
+  </div>  
+    <div class="form-group row">  
+    <label class="col-sm-2 col-form-label">funcionario Email:</label>  
+    <div class="col-sm-4">  
+        <input type="email" name="femail" id="id_femail" required maxlength="254" value="{{ funcionario.femail }}" />  
+    </div>  
+  </div>  
+    <div class="form-group row">  
+    <label class="col-sm-2 col-form-label">funcionario Contact:</label>  
+    <div class="col-sm-4">  
+        <input type="text" name="fcontact" id="id_fcontact" required maxlength="15" value="{{ funcionario.fcontact }}" />  
+    </div>  
+  </div>  
+    <div class="form-group row">  
+    <label class="col-sm-1 col-form-label"></label>  
+    <div class="col-sm-4">  
+    <button type="submit" class="btn btn-success">Atualizar</button>  
+    </div>  
+  </div>  
+    </div>  
+</form>  
+</main>
+<footer class="page-footer">
+    <div class="container">
+      <span class="dcmnit_copyright">© 2020 DCMN IT - Soluções em tecnologias</span>
+    </div>
+    </div>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="/static/js/main.js"></script>
+</body>  
+</html>  
