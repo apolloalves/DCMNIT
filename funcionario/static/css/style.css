@@ -206,6 +206,9 @@ main>table {
 
 .dcmnit_authors__title span {
     margin-left: 1rem;
+    font-size: 12px;
+    font-weight: bold;
+    color: #70abb1;
 }
 
 .dcmnit_user__icon,.dcmnit_save__icon,.dcmnit_cancel__icon,.dcmnit_edit__icon {
