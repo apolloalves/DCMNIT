@@ -186,11 +186,23 @@ main>table {
 
 .dcmnit_authors__title {
     background: #f1f1f1;
-    color: #000;
+    color     : #000;
     margin    : 1.8rem 0 1.8rem;
 
 }
 
 .dcmnit_authors__title span {
     margin-left: 1rem;
+}
+
+.dcmnit_user__icon,.dcmnit_save__icon,.dcmnit_cancel__icon,.dcmnit_edit__icon {
+    font-size     : 6rem;
+    vertical-align: middle;
+    margin-right  : 2rem;
+
+}
+
+.dcmnit_save__icon,.dcmnit_cancel__icon {
+    font-size: 1.5rem!important;
+    margin-right: 10px;
 }
