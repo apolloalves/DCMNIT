@@ -160,7 +160,7 @@ main>table {
 
 .sidenav li>a {
     font-size     : 13px;
-    padding       : 30px 12px;
+    padding       : 25px 12px;
     line-height   : 1.4;
     text-transform: initial;
     height        : 45px;
@@ -182,13 +182,22 @@ main>table {
     padding-top   : 0;
     padding-bottom: 0;
     line-height   : normal;
+    display: inline-block;
 }
 
 .dcmnit_authors__title {
     background: #f1f1f1;
     color     : #000;
-    margin    : 1.8rem 0 1.8rem;
+    margin    : 1rem 0 1rem;
 
+}
+
+.dcmnit_authors img {
+    width: 60px;
+    height: 60px;
+    max-width: 100%;
+    margin-left: 10px;
+    
 }
 
 .dcmnit_authors__title span {
