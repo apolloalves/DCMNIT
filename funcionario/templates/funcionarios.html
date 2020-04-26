@@ -15,12 +15,12 @@
 
 <body>
     <header class="dcmnit">
-     <div class="dcmnit_container">
+        <div class="dcmnit_container">
             <i class="material-icons dcmnit_icon">polymer</i>
             <span>basics</span>
         </div>
 
-    {% comment %} aside menu  {% endcomment %}
+        {% comment %} aside menu {% endcomment %}
         <ul id="slide-out" class="sidenav">
             <li>
                 <div class="user-view">
@@ -51,7 +51,7 @@
         </ul>
         {% comment %} end aside menu {% endcomment %}
 
-        {% comment %} Modal info  {% endcomment %}
+        {% comment %} Modal info {% endcomment %}
         <div class="dcmnit_module_version">
             <a href="/emp" class="dcmnit_icon__group"><i class="material-icons">group_add</i></a>
             <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
@@ -63,16 +63,17 @@
                     <div class="divider"></div>
                     <br>
                     <ul>
-                    <li class="black-text">Versao 1.3.92</li>
-                    <li class="black-text">Python 3.6.9</li>
-                    <li class="black-text">Django (3, 0, 5, 'final', 0)</li>
-                    <li class="black-text">mysql Versão 14.14 Distrib 5.7.29, for Linux (x86_64) using  EditLine wrapper</li>
-                    <li class="black-text">Commit: d7e450249c16e1db31f307d721cd630836d1a944</li>
-                    <br>
-                  
-                    <li class="black-text">Copyright © 2020 DCMNIT Solucões em Tecnologia</li>
-                    <li class="black-text">Todos os direitos reservados.</li>
-                    <li class="black-text lower-case"><a href="#">www.dcmnit.com</a></li>
+                        <li class="black-text">Versao 1.3.92</li>
+                        <li class="black-text">Python 3.6.9</li>
+                        <li class="black-text">Django (3, 0, 5, 'final', 0)</li>
+                        <li class="black-text">mysql Versão 14.14 Distrib 5.7.29, for Linux (x86_64) using EditLine
+                            wrapper</li>
+                        <li class="black-text">Commit: d7e450249c16e1db31f307d721cd630836d1a944</li>
+                        <br>
+
+                        <li class="black-text">Copyright © 2020 DCMNIT Solucões em Tecnologia</li>
+                        <li class="black-text">Todos os direitos reservados.</li>
+                        <li class="black-text lower-case"><a href="#">www.dcmnit.com</a></li>
                     </ul>
                 </div>
                 <div class="modal-footer">
@@ -115,21 +116,23 @@
                             data-tooltip="Excluir Funcionário"><i class="material-icons">delete</i></a>
                     </td>
                     <!-- Modal Structure -->
-  <div id="modal_delete" class="modal">
-     <span class="label_dcmnit_dialog"><i class="material-icons dcmnit_icon">polymer</i> BASICS</span>
-    <div class="modal-content">
-      <h5>Exclusão de Funcionário</h5>
-      <p>Tem certeza que seja excluir definitavemente este funcionario?</p>
-    </div>
-    <div class="modal-footer">
-       <a href="/delete/{{ funcionario.id }}" id="dcmnit_btn__delete"
-                            class="btn dcmnit_red" data-position="top">Sim, excluir</a>
-    <a href="/funcionarios" class="btn black-text">cancelar</a>
-    </div>
-  </div>
-          
+                    <div id="modal_delete" class="modal">
+                        <span class="label_dcmnit_dialog"><i class="material-icons dcmnit_icon">polymer</i>
+                            BASICS</span>
+                        <div class="modal-content">
+                            <h5>Exclusão de Funcionário</h5>
+                            <p>Tem certeza que seja excluir definitavemente este funcionario?</p>
+                        </div>
+                        <div class="modal-footer">
+                            <a href="/delete/{{ funcionario.id }}" id="dcmnit_btn__delete" class="btn dcmnit_red"
+                                data-position="top">Sim, excluir</a>
+                            <a href="/funcionarios" class="btn black-text">cancelar</a>
+                        </div>
+                    </div>
+
                 </tr>
                 {% endfor %}
+
             </tbody>
         </table><br><br>
 
