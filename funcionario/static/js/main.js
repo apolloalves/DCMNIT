@@ -6,5 +6,9 @@ document.addEventListener('DOMContentLoaded', () => {
     let instances = M.Tooltip.init( elems,{enterDelay: 300,exitDelay:100} );
     let instance = M.Sidenav.init( sidenav );
 
+    var modal = document.querySelectorAll('.modal');
+    let inst_modal = M.Modal.init(modal);
+   
+
 });
 
