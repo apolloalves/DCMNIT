@@ -182,7 +182,7 @@ main>table {
     padding-top   : 0;
     padding-bottom: 0;
     line-height   : normal;
-    display: inline-block;
+    display       : inline-block;
 }
 
 .dcmnit_authors li {
@@ -197,46 +197,75 @@ main>table {
 }
 
 .dcmnit_authors img {
-    width: 50px;
-    height: 50px;
-    max-width: 100%;
+    width      : 50px;
+    height     : 50px;
+    max-width  : 100%;
     margin-left: 10px;
-    
+
 }
 
 .dcmnit_authors__title span {
     margin-left: 1rem;
-    font-size: 12px;
+    font-size  : 12px;
     font-weight: bold;
-    color: #70abb1;
+    color      : #70abb1;
 }
 
-.dcmnit_user__icon,.dcmnit_save__icon,.dcmnit_cancel__icon,.dcmnit_edit__icon {
+.dcmnit_user__icon,
+.dcmnit_save__icon,
+.dcmnit_cancel__icon,
+.dcmnit_edit__icon {
     font-size     : 6rem;
     vertical-align: middle;
     margin-right  : 2rem;
 
 }
 
-.dcmnit_save__icon,.dcmnit_cancel__icon {
-    font-size: 1.5rem!important;
+.dcmnit_save__icon,
+.dcmnit_cancel__icon {
+    font-size   : 1.5rem !important;
     margin-right: 10px;
 }
 
-.dcmnit_module_version .dcmnit_info,.dcmnit_icon__group {
-    color: #039be5;
+.dcmnit_module_version .dcmnit_info,
+.dcmnit_icon__group {
+    color       : #039be5;
     margin-right: 2rem;
 }
 
-.dcmnit_info{
-    margin-left: 2rem;
-    margin-right: 0!important;
+.dcmnit_info {
+    margin-left : 2rem;
+    margin-right: 0 !important;
 }
 
 .modal-content i {
     vertical-align: middle;
 }
 
-.lower-case { 
-    text-transform: lowercase!important;
+.lower-case {
+    text-transform: lowercase !important;
+}
+
+#modal_delete {width: 45%;}
+#modal_delete .modal-footer{padding: 0 35px;}
+#modal_delete .dcmnit_icon{font-size: 2.2rem!important;}
+.label_dcmnit_dialog {
+    flex      : 1;
+    background: #35363a;
+    color     : #fff;
+    display   : flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    padding   : 6px 12px;
+    font-size : 1.2rem;
+    box-shadow: 0 0 2px 1px black;
+
+}
+
+.modal-footer a:last-child{
+    text-transform: uppercase;
+    margin-left: 6px!important;
+    background: #eee;
+    color: #444;
 }
