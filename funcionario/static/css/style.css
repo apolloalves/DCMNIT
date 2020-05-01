@@ -246,9 +246,9 @@ main>table {
     text-transform: lowercase !important;
 }
 
-#modal_delete {width: 45%;}
+#modal_delete {width: 40%;top:25%!important;}
 #modal_delete .modal-footer{padding: 0 35px;}
-#modal_delete .dcmnit_icon{font-size: 2.2rem!important;}
+#modal_delete .dcmnit_icon{font-size: 2.2rem!important;margin-right: 8px;}
 .label_dcmnit_dialog {
     flex      : 1;
     background: #35363a;
