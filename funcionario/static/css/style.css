@@ -41,14 +41,13 @@ main {
 
 .dcmnit_box-floating {
     display        : flex;
-    width          : 94%;
+    width          : 100%;
     flex-direction : row;
     justify-content: flex-end;
     height         : 7rem;
     align-items    : center;
-    position       : absolute;
-    bottom         : 6rem;
-    padding        : 0 47px 0 0;
+    padding-right  : 3rem;
+   
 }
 
 .btn-floating.btn-large {
@@ -75,9 +74,12 @@ main {
     font-size: 2.5rem;
 }
 
-main>table {
+.wrapper {
     position: relative;
-    top     : 3rem;
+    top     : 2rem;
+    padding: 1rem;
+   
+    
 }
 
 .page-footer {
@@ -86,7 +88,7 @@ main>table {
 }
 
 .dcmnit_red {
-    background: #b96063;
+    background: #7c355d;
 }
 
 .dcmnit_icon {
@@ -246,26 +248,37 @@ main>table {
     text-transform: lowercase !important;
 }
 
-#modal_delete {width: 40%;top:25%!important;}
-#modal_delete .modal-footer{padding: 0 35px;}
-#modal_delete .dcmnit_icon{font-size: 2.2rem!important;margin-right: 8px;}
+#modal_delete {
+    width: 40%;
+    top  : 25% !important;
+}
+
+#modal_delete .modal-footer {
+    padding: 0 35px;
+}
+
+#modal_delete .dcmnit_icon {
+    font-size   : 2.2rem !important;
+    margin-right: 8px;
+}
+
 .label_dcmnit_dialog {
-    flex      : 1;
-    background: #35363a;
-    color     : #fff;
-    display   : flex;
-    align-items: center;
+    flex           : 1;
+    background     : #35363a;
+    color          : #fff;
+    display        : flex;
+    align-items    : center;
     justify-content: flex-start;
-    flex-wrap: nowrap;
-    padding   : 6px 12px;
-    font-size : 1.2rem;
-    box-shadow: 0 0 2px 1px black;
+    flex-wrap      : nowrap;
+    padding        : 6px 12px;
+    font-size      : 1.2rem;
+    box-shadow     : 0 0 2px 1px black;
 
 }
 
-.modal-footer a:last-child{
+.modal-footer a:last-child {
     text-transform: uppercase;
-    margin-left: 6px!important;
-    background: #eee;
-    color: #444;
+    margin-left   : 6px !important;
+    background    : #eee;
+    color         : #444;
 }
