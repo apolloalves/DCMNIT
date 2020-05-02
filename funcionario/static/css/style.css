@@ -47,7 +47,7 @@ main {
     height         : 7rem;
     align-items    : center;
     padding-right  : 3rem;
-   
+
 }
 
 .btn-floating.btn-large {
@@ -70,16 +70,18 @@ main {
 }
 
 .dcmnit_title>h3 {
-    margin   : 0 0 0 15px;
-    font-size: 2.5rem;
+    margin     : 0 0 0 15px;
+    font-size  : 3.5rem;
+    font-weight: 200;
 }
 
 .wrapper {
-    position: relative;
-    top     : 2rem;
-    padding: 1rem;
-   
-    
+    position     : relative;
+    top          : 2.5rem;
+    padding      : 1rem;
+    margin-bottom: 3rem;
+
+
 }
 
 .page-footer {
@@ -231,8 +233,8 @@ main {
 
 .dcmnit_module_version .dcmnit_info,
 .dcmnit_icon__group {
-    color       : #039be5;
-    margin-right: 2rem;
+    color: #fff;
+
 }
 
 .dcmnit_info {
