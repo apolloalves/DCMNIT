@@ -1,20 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <title>Index</title>
-  {% load static %}
-  <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}" />
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-     <!-- Compiled and minified CSS -->
+  <head>
+    <meta charset="UTF-8">
+    <title>Basics - funcionários</title>
+    {% load static %}
+    <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="{% static 'css/style.css' %}" />
-
-</head>  
-<body>  
-  
-       <header class="dcmnit">
+</head>
+<body>
+        <header class="dcmnit">
+            <div class="dcmnit_container">
+                <i class="material-icons dcmnit_icon">polymer</i>
+                <span>basics</span>
+            </div>
+            <div class="dcmnit_module_version">
+                <a href="/emp" class="dcmnit_icon__group"><i class="material-icons">group_add</i></a>
+                <a href="#" data-target="slide-out" class="sidenav-trigger dcmnit_info"><i class="material-icons">menu</i></a>
+                <a href="#modal1" class="modal-trigger dcmnit_info"><i class="material-icons ">info</i></a>
+            </div>
+        </header>
+    
+        <!-- Modal info --> 
+        <div id="modal1" class="modal">
+            <div class="modal-content">
+                <h4 class="black-text text-darken-2"><i class="material-icons dcmnit_icon">polymer</i>BASICS</h4>
+                <div class="divider"></div>
+                <br>
+                <ul>
+                    <li class="black-text">Versão 1.5.2</li>
+                    <li class="black-text">Python 3.8.2</li>
+                    <li class="black-text">Django (3, 0, 5, 'final', 0)</li>
+                    <li class="black-text">mysql Versão 14.14 Distrib 5.7.29, for Linux (x86_64) using EditLine wrapper</li>
+                    <li class="black-text">Commit: 61f63821930f95483917e2f9a8b9369fe1fe2d6b</li>
+                    <br>
+                    <li class="black-text">Copyright © 2020 DCMNIT Solucões em Tecnologia</li>
+                    <li class="black-text">Todos os direitos reservados.</li>
+                    <li class="black-text lower-case"><a href="#">www.dcmnit.com</a></li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <a href="#!" class="modal-close waves-effect waves-green btn-flat">Fechar</a>
+            </div>
+        </div>
+        <!-- End Modal BASICS INFO --> 
+            
+        <!-- Modal AUTORS  --> 
         <ul id="slide-out" class="sidenav">
             <li>
                 <div class="user-view">
@@ -26,57 +61,19 @@
             <li><a href="#"><i class="material-icons">drafts</i>dcmnit@solutions.com</a></li>
             <li><a href="#"><i class="material-icons dcmnit_addres">language</i>www.dcmnit.com</a></li>
             <li><a href="#"><i class="material-icons dcmnit_addres">location_on</i>Rua Beneficência Portuguesa n. 4001
-                    CEP: 03480-024 São Paulo/SP</a></li>
+                CEP: 03480-024 São Paulo/SP</a></li>
             <li><a href="#"><i class="material-icons">smartphone</i>(11) 9897-2666</a></li>
             <li><a href="#"><i class="material-icons">phone</i>(11) 2342-2935</a></li>
             <li>
                 <ul class="dcmnit_authors">
                     <li class="dcmnit_authors__title"><span>Fundadores da DCMN IT</span></li>
-                    <li><img class="circle" src="/static/images/apollo.jpg"><a class="waves-effect" href="#!">Douglas
-                            Apolonio Alves</a></li>
-                    <li><img class="circle" src="/static/images/noadia.png"><a class="waves-effect" href="#!">Noadia De
-                            Valença Silva</a></li>
-                    <li><img class="circle" src="/static/images/carlos.png"><a class="waves-effect" href="#!">Carlos
-                            Guilherme</a></li>
-                    <li><img class="circle" src="/static/images/max.png"><a class="waves-effect" href="#!">Max
-                            Gustavo</a></li>
+                    <li><img class="circle" src="/static/images/apollo.jpg"><a class="waves-effect" href="#!">Douglas Apolonio Alves</a></li>
+                    <li><img class="circle" src="/static/images/noadia.png"><a class="waves-effect" href="#!">Noadia De Valença Silva</a></li>
+                    <li><img class="circle" src="/static/images/carlos.png"><a class="waves-effect" href="#!">Carlos Guilherme</a></li>
+                    <li><img class="circle" src="/static/images/max.png"><a class="waves-effect" href="#!">Max Gustavo</a></li>
                 </ul>
             </li>
         </ul>
-        <div class="dcmnit_container">
-            <i class="material-icons dcmnit_icon">polymer</i>
-            <span>basics</span>
-        </div>
-        <div class="dcmnit_module_version">
-            <a href="/emp" class="dcmnit_icon__group"><i class="material-icons">group_add</i></a>
-            <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-            <a href="#modal1" class="modal-trigger dcmnit_info"><i class="material-icons ">info</i></a>
-            <!-- Modal Structure -->
-            <div id="modal1" class="modal">
-                <div class="modal-content">
-                    <h4 class="black-text text-darken-2"><i class="material-icons dcmnit_icon">polymer</i>BASICS</h4>
-                    <div class="divider"></div>
-                    <br>
-                    <ul>
-                    <li class="black-text">Versao 1.3.92</li>
-                    <li class="black-text">Python 3.6.9</li>
-                    <li class="black-text">Django (3, 0, 5, 'final', 0)</li>
-                    <li class="black-text">mysql Versão 14.14 Distrib 5.7.29, for Linux (x86_64) using  EditLine wrapper</li>
-                    <li class="black-text">Commit: d7e450249c16e1db31f307d721cd630836d1a944</li>
-                    <br>
-                  
-                    <li class="black-text">Copyright © 2020 DCMNIT Solucões em Tecnologia</li>
-                    <li class="black-text">Todos os direitos reservados.</li>
-                    <li class="black-text lower-case"><a href="#">www.dcmnit.com</a></li>
-                    </ul>
-                </div>
-                <div class="modal-footer">
-                    <a href="#!" class="modal-close waves-effect waves-green btn-flat">Fechar</a>
-                </div>
-            </div>
-
-        </div>
-    </header>
   <main>
     <form method="POST" class="post-form" action="/emp">
       {% csrf_token %}
