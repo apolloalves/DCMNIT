@@ -5,17 +5,16 @@
     <title>Basics - funcionários</title>
     {% load static %}
     <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}" />
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    
     <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="{% static 'css/materialize.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/icon.css' %}" />
     <link rel="stylesheet" href="{% static 'css/style.css' %}" />
 </head>
 <body>
       <header class="dcmnit">
           <div class="dcmnit_container">
               <i class="material-icons dcmnit_icon">polymer</i>
-              <span>basics</span>
+              <span>BASICS</span>
           </div>
           <div class="dcmnit_module_version">
               <a href="/emp" class="dcmnit_icon__group"><i class="material-icons tooltipped" data-position="bottom" data-tooltip="Novo Funcionário">group_add</i></a>
@@ -127,9 +126,8 @@
     <div class="container">
       <span class="dcmnit_copyright">© 2020 DCMN IT - Soluções em tecnologias</span>
     </div>
-    </div>
     <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="/static/js/materialize.min.js"></script>
     <script src="/static/js/main.js"></script>
   
 </body>  
