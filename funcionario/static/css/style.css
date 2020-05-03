@@ -45,13 +45,13 @@ main {
     flex-direction : row;
     justify-content: flex-end;
     height         : 7rem;
-    align-items    : center;
-    padding-right  : 3rem;
+    align-items    : flex-end;
+    padding-right  : 3.5rem;
 
 }
 
 .btn-floating.btn-large {
-    background: #515d71;
+    background: #35363a;
 }
 
 .dcmnit_title {
