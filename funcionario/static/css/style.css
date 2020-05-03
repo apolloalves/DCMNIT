@@ -79,8 +79,6 @@ main {
     position     : relative;
     top          : 2.5rem;
     padding      : 1rem;
-    margin-bottom: 3rem;
-
 
 }
 
@@ -284,3 +282,5 @@ main {
     background    : #eee;
     color         : #444;
 }
+
+.modal-content p {font-size: 19px;}
