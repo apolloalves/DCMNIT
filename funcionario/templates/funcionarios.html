@@ -1,26 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <title>Basics - funcionários</title>
     {% load static %}
     <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="{% static 'css/style.css' %}" />
-
 </head>
-
 <body>
-    <header class="dcmnit">
-        <div class="dcmnit_container">
-            <i class="material-icons dcmnit_icon">polymer</i>
-            <span>basics</span>
+        <header class="dcmnit">
+            <div class="dcmnit_container">
+                <i class="material-icons dcmnit_icon">polymer</i>
+                <span>basics</span>
+            </div>
+            <div class="dcmnit_module_version">
+                <a href="/emp" class="dcmnit_icon__group"><i class="material-icons">group_add</i></a>
+                <a href="#" data-target="slide-out" class="sidenav-trigger dcmnit_info"><i class="material-icons">menu</i></a>
+                <a href="#modal1" class="modal-trigger dcmnit_info"><i class="material-icons ">info</i></a>
+            </div>
+        </header>
+    
+        <!-- Modal info --> 
+        <div id="modal1" class="modal">
+            <div class="modal-content">
+                <h4 class="black-text text-darken-2"><i class="material-icons dcmnit_icon">polymer</i>BASICS</h4>
+                <div class="divider"></div>
+                <br>
+                <ul>
+                    <li class="black-text">Versão 1.5.2</li>
+                    <li class="black-text">Python 3.8.2</li>
+                    <li class="black-text">Django (3, 0, 5, 'final', 0)</li>
+                    <li class="black-text">mysql Versão 14.14 Distrib 5.7.29, for Linux (x86_64) using EditLine wrapper</li>
+                    <li class="black-text">Commit: 61f63821930f95483917e2f9a8b9369fe1fe2d6b</li>
+                    <br>
+                    <li class="black-text">Copyright © 2020 DCMNIT Solucões em Tecnologia</li>
+                    <li class="black-text">Todos os direitos reservados.</li>
+                    <li class="black-text lower-case"><a href="#">www.dcmnit.com</a></li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <a href="#!" class="modal-close waves-effect waves-green btn-flat">Fechar</a>
+            </div>
         </div>
-
-        {% comment %} aside menu {% endcomment %}
+        <!-- End Modal BASICS INFO --> 
+            
+        <!-- Modal AUTORS  --> 
         <ul id="slide-out" class="sidenav">
             <li>
                 <div class="user-view">
@@ -32,126 +60,86 @@
             <li><a href="#"><i class="material-icons">drafts</i>dcmnit@solutions.com</a></li>
             <li><a href="#"><i class="material-icons dcmnit_addres">language</i>www.dcmnit.com</a></li>
             <li><a href="#"><i class="material-icons dcmnit_addres">location_on</i>Rua Beneficência Portuguesa n. 4001
-                    CEP: 03480-024 São Paulo/SP</a></li>
+                CEP: 03480-024 São Paulo/SP</a></li>
             <li><a href="#"><i class="material-icons">smartphone</i>(11) 9897-2666</a></li>
             <li><a href="#"><i class="material-icons">phone</i>(11) 2342-2935</a></li>
             <li>
                 <ul class="dcmnit_authors">
                     <li class="dcmnit_authors__title"><span>Fundadores da DCMN IT</span></li>
-                    <li><img class="circle" src="/static/images/apollo.jpg"><a class="waves-effect" href="#!">Douglas
-                            Apolonio Alves</a></li>
-                    <li><img class="circle" src="/static/images/noadia.png"><a class="waves-effect" href="#!">Noadia De
-                            Valença Silva</a></li>
-                    <li><img class="circle" src="/static/images/carlos.png"><a class="waves-effect" href="#!">Carlos
-                            Guilherme</a></li>
-                    <li><img class="circle" src="/static/images/max.png"><a class="waves-effect" href="#!">Max
-                            Gustavo</a></li>
+                    <li><img class="circle" src="/static/images/apollo.jpg"><a class="waves-effect" href="#!">Douglas Apolonio Alves</a></li>
+                    <li><img class="circle" src="/static/images/noadia.png"><a class="waves-effect" href="#!">Noadia De Valença Silva</a></li>
+                    <li><img class="circle" src="/static/images/carlos.png"><a class="waves-effect" href="#!">Carlos Guilherme</a></li>
+                    <li><img class="circle" src="/static/images/max.png"><a class="waves-effect" href="#!">Max Gustavo</a></li>
                 </ul>
             </li>
         </ul>
-        {% comment %} end aside menu {% endcomment %}
-
-        {% comment %} Modal info {% endcomment %}
-        <div class="dcmnit_module_version">
-            <a href="/emp" class="dcmnit_icon__group"><i class="material-icons">group_add</i></a>
-            <a href="#" data-target="slide-out" class="sidenav-trigger dcmnit_info"><i class="material-icons">menu</i></a>
-            <a href="#modal1" class="modal-trigger dcmnit_info"><i class="material-icons ">info</i></a>
-            <!-- Modal Structure -->
-            <div id="modal1" class="modal">
-                <div class="modal-content">
-                    <h4 class="black-text text-darken-2"><i class="material-icons dcmnit_icon">polymer</i>BASICS</h4>
-                    <div class="divider"></div>
-                    <br>
-                    <ul>
-                        <li class="black-text">Versão 1.5.2</li>
-                        <li class="black-text">Python 3.8.2</li>
-                        <li class="black-text">Django (3, 0, 5, 'final', 0)</li>
-                        <li class="black-text">mysql Versão 14.14 Distrib 5.7.29, for Linux (x86_64) using EditLine
-                            wrapper</li>
-                        <li class="black-text">Commit: 61f63821930f95483917e2f9a8b9369fe1fe2d6b</li>
-                        <br>
-
-                        <li class="black-text">Copyright © 2020 DCMNIT Solucões em Tecnologia</li>
-                        <li class="black-text">Todos os direitos reservados.</li>
-                        <li class="black-text lower-case"><a href="#">www.dcmnit.com</a></li>
-                    </ul>
-                </div>
-                <div class="modal-footer">
-                    <a href="#!" class="modal-close waves-effect waves-green btn-flat">Fechar</a>
-                </div>
+        <!-- end aside menu --> 
+        <main>
+            <div class="dcmnit_title">
+                <i class="material-icons dcmnit_folder">folder</i>
+                <h3>Funcionários</h3>
             </div>
-        </div>
-    </header>
-    <main>
-        <div class="dcmnit_title">
-            <i class="material-icons dcmnit_folder">folder</i>
-            <h3>Funcionários</h3>
-        </div>
-        <div class="wrapper">
-        <table class="table table-striped table-bordered table-sm">
-            <thead class="thead-dark">
-                <tr>
-                    <th>ID</th>
-                    <th>Nome</th>
-                    <th>Cargo</th>
-                    <th>Email</th>
-                    <th>Telefone</th>
-                    <th>Ações</th>
-                </tr>
-            </thead>
-            <tbody>
-                {% for funcionario in funcionarios %}
-                <tr>
-                    <td>{{ funcionario.fid }}</td>
-                    <td>{{ funcionario.fname }}</td>
-                    <td>{{ funcionario.fposition }}</td>
-                    <td>{{ funcionario.femail }}</td>
-                    <td>{{ funcionario.fcontact }}</td>
-                    <td>
-                        <a href="/edit/{{ funcionario.id }}" id="dcmnit_btn__edit"
-                            class="btn btn-raised btn-primary tooltipped" data-position="top"
-                            data-tooltip="Editar Funcionário"><span class="glyphicon glyphicon-pencil"><i
-                                    class="material-icons">edit</i></span></a>
-                        <a href="#modal_delete" id="dcmnit_btn__delete"
-                            class="btn btn-raised btn-primary dcmnit_red tooltipped modal-trigger" data-position="top"
-                            data-tooltip="Excluir Funcionário"><i class="material-icons">delete</i></a>
-                    </td>
-                    <!-- Modal Structure -->
-                    <div id="modal_delete" class="modal">
-                        <span class="label_dcmnit_dialog"><i class="material-icons dcmnit_icon">polymer</i>
-                            BASICS</span>
-                        <div class="modal-content">
-                            <h5>Exclusão de Funcionário</h5>
-                            <p>Tem certeza que seja excluir este funcionario?</p>
-                        </div>
-                        <div class="modal-footer">
-                            <a href="/delete/{{ funcionario.id }}" id="dcmnit_btn__delete" class="btn dcmnit_red"
-                                data-position="top">Sim, excluir</a>
-                            <a href="/funcionarios" class="btn black-text">cancelar</a>
-                        </div>
-                    </div>
-
-                </tr>
-                {% endfor %}
-
-            </tbody>
-        </table><br><br>
-    </div>
-        <div class="dcmnit_box-floating">
-            <a href="/emp" class="btn-floating btn-large waves-effect waves-light tooltipped" data-position="top"
-                data-tooltip="Novo Funcionário"><i class="material-icons">add
-                </i></a>
-        </div>
-    </main>
-    <footer class="page-footer z-depth-2">
-        <div class="container">
-            <span class="dcmnit_copyright">© 2020 DCMN IT - Soluções em tecnologias</span>
-        </div>
-        </div>
-    </footer>
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script src="/static/js/main.js"></script>
-</body>
-
+            <div class="wrapper">
+                <table class="table table-striped table-bordered table-sm">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>ID</th>
+                            <th>Nome</th>
+                            <th>Cargo</th>
+                            <th>Email</th>
+                            <th>Telefone</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for funcionario in funcionarios %}
+                        <tr>
+                            <td>{{ funcionario.fid }}</td>
+                            <td>{{ funcionario.fname }}</td>
+                            <td>{{ funcionario.fposition }}</td>
+                            <td>{{ funcionario.femail }}</td>
+                            <td>{{ funcionario.fcontact }}</td>
+                            <td>
+                                <a href="/edit/{{ funcionario.id }}" id="dcmnit_btn__edit"
+                                    class="btn btn-raised btn-primary tooltipped" data-position="top"
+                                    data-tooltip="Editar Funcionário"><span class="glyphicon glyphicon-pencil"><i class="material-icons">edit</i>
+                                    </span>
+                                </a>
+                                <a href="#modal_delete" id="dcmnit_btn__delete"
+                                    class="btn btn-raised btn-primary dcmnit_red tooltipped modal-trigger" data-position="top" data-tooltip="Excluir Funcionário">
+                                    <i class="material-icons">delete</i>
+                                </a>
+                            </td>
+                            <!-- Modal Structure -->
+                            <div id="modal_delete" class="modal">
+                                <span class="label_dcmnit_dialog"><i class="material-icons dcmnit_icon">polymer</i>BASICS</span>
+                                <div class="modal-content">
+                                    <h5>Exclusão de Funcionário</h5>
+                                    <p>Tem certeza que seja excluir este funcionario?</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <a href="/delete/{{ funcionario.id }}" id="dcmnit_btn__delete" class="btn dcmnit_red"
+                                        data-position="top">Sim, excluir</a>
+                                    <a href="/funcionarios" class="btn black-text">cancelar</a>
+                                </div>
+                            </div>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table><br><br>
+            </div>
+            <div class="dcmnit_box-floating">
+                <a href="/emp" class="btn-floating btn-large waves-effect waves-light tooltipped" data-position="top" data-tooltip="Novo Funcionário">
+                    <i class="material-icons">add</i></a>
+            </div>
+        </main>
+        <footer class="page-footer z-depth-2">
+            <div class="container">
+                <span class="dcmnit_copyright">© 2020 DCMN IT - Soluções em tecnologias</span>
+            </div>
+        </footer>
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <script src="/static/js/main.js" ></script>
+    </body>
 </html>
