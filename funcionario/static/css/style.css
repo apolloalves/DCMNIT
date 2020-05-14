@@ -283,4 +283,9 @@ main {
     color         : #444;
 }
 
+.table tr:hover {
+    background: #444;
+    color: #fff;
+    transition: 1s all;
+}
 .modal-content p {font-size: 19px;}
