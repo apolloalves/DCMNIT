@@ -5,7 +5,7 @@
 
 Django (3, 0, 5, 'final', 0)
 mysql Versão 14.14 Distrib 5.7.29, for Linux (x86_64) using EditLine wrapper
-Commit: 61f63821930f95483917e2f9a8b9369fe1fe2d6b
+Commit: a14efd26e1882439137cdf6b135e1b83997d57a6
 
 Copyright © 2020 DCMNIT Solucões em Tecnologia
 Todos os direitos reservados.
