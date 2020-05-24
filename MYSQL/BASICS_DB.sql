@@ -1,3 +1,5 @@
+USE BASICS_DB; 
+
 -- MySQL dump 10.13  Distrib 5.7.29, for Linux (x86_64)
 --
 -- Host: 127.0.0.1    Database: BASICS_DB
@@ -318,7 +320,14 @@ CREATE TABLE `funcionario` (
 
 LOCK TABLES `funcionario` WRITE;
 /*!40000 ALTER TABLE `funcionario` DISABLE KEYS */;
-INSERT INTO `funcionario` VALUES (10,'301911295','Noadia De Valença Silva','Google Analytics','noadia_silva@dcmnit.com','11 93578-9569'),(11,'419104528','Carlos Guilherme','Systems Developer Analyst','carlosguilherme@dcmnit.com','11 98584-7898'),(12,'419117494','Max Gustavo','Scrum Master','gustavomax@dcmnit.com','11 98566-7845'),(13,'831056','Carlos Guilherme','Developer Analist','apolloapolloalves@dcmnit.com','11 - 8584-7898');
+INSERT INTO `funcionario` VALUES 
+(1,'419117215','DOUGLAS APOLONIO ALVES','SOFTWARE ENGINNER','douglas.alves@dcmnit.com','11 99205-9242'),
+(2,'301911295','NOADIA DE VALENÇA SILVA','FULLSTACK DEVELOPER','noadia_silva@dcmnit.com','11 93578-9569'),
+(3,'219104528','CARLOS GUILHERME','FRONT-END DEVELOPER','carlosguilherme@dcmnit.com','11 98584-7898'),
+(4,'318103318','MARCELO DOS SANTOS SILVA','CAMPAING MANAGER','marcelo.santos@dcmnit.com','11 95848-9874'),
+(5,'517484304','CAMILA NUNES BORGES','DESIGNER UI/UX ','camila.borges@dcmnit.com','11 93448-7845'),
+(6,'614760852','EVANDRO SOARES CAMPELO','PROJETC MANAGER','evandro.campelo@dcmnit.com','11 95648-7412'); 
+
 /*!40000 ALTER TABLE `funcionario` ENABLE KEYS */;
 UNLOCK TABLES;
 
