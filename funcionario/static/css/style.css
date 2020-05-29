@@ -188,7 +188,7 @@ main {
 }
 
 .dcmnit_authors li {
-    line-height: 45px;
+    line-height: 70px;
 }
 
 .dcmnit_authors__title {
@@ -199,8 +199,8 @@ main {
 }
 
 .dcmnit_authors img {
-    width      : 50px;
-    height     : 50px;
+    width      : 60px;
+    height     : 60px;
     max-width  : 100%;
     margin-left: 10px;
 
@@ -210,7 +210,7 @@ main {
     margin-left: 1rem;
     font-size  : 12px;
     font-weight: bold;
-    color      : #70abb1;
+    color      : #22666d;
 }
 
 .dcmnit_user__icon,
